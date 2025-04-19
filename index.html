@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking</title>
+
+  <!--Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NavBar -->
+  <header class="booking-header">
+    <div class="left-section">
+      <div class="logo">Booking<span>.com</span></div>
+      <nav class="nav-links">
+        <button class="nav-btn active"><i class="fas fa-bed"></i> Stays</button>
+        <button class="nav-btn"><i class="fas fa-plane"></i> Flights</button>
+        <button class="nav-btn"><i class="fas fa-suitcase-rolling"></i> Flight + Hotel</button>
+        <button class="nav-btn"><i class="fas fa-car"></i> Car rentals</button>
+        <button class="nav-btn"><i class="fas fa-sitemap"></i> Experiences</button>
+        <button class="nav-btn"><i class="fas fa-taxi"></i> Airport taxis</button>
+      </nav>
+    </div>
+
+    <div class="right-section">
+      <div class="currency">INR</div>
+      <img src="https://flagcdn.com/w40/in.png" alt="IN Flag" class="flag" />
+      <i class="fas fa-question-circle help-icon"></i>
+      <a href="#" class="list-property">List your property</a>
+      <button class="header-btn register">Register</button>
+      <button class="header-btn signin">Sign in</button>
+    </div>
+  </header>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="loading-container">
+      <div class="loading-circle circle-1"></div>
+      <div class="loading-circle circle-2"></div>
+      <div class="loading-circle circle-3"></div>
+      <div class="loading-plane"></div>
+  </div>
+  <div class="loading-text">Loading Your Journey</div>
+  <div class="loading-progress">
+      <div class="progress-bar"></div>
+  </div>
+</div>
+
+
+  <!-- Hero Section -->
+<div class="container">
+
+    <div class="slide">
+
+        
+        <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
+            <div class="content">
+                <div class="name">Switzerland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        
+        <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+            <div class="content">
+                <div class="name">Iceland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+            <div class="content">
+                <div class="name">Australia</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        
+        <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+            <div class="content">
+                <div class="name">Ireland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
+            <div class="content">
+                <div class="name">Finland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+            <div class="content">
+                <div class="name">Netherland</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    
+<script src="script.js"></script>
+</div>
+
+
+<!-- Search Bar -->
+<div class="booking-search-wrapper">
+    <div class="booking-search-bar">
+      <div class="search-item">
+        <i class="fa fa-bed"></i>
+        <span>Where are you going?</span>
+      </div>
+      <div class="search-item">
+        <i class="fa fa-calendar"></i>
+        <span>Check-in date — Check-out date</span>
+      </div>
+      <div class="search-item">
+        <i class="fa fa-user"></i>
+        <span>2 adults · 0 children · 1 room</span>
+        <i class="fa fa-chevron-down dropdown-icon"></i>
+      </div>
+      <button class="search-button">Search</button>
+    </div>
+
+    <div class="search-checkbox">
+      <input type="checkbox" id="flights" />
+      <label for="flights">I’m looking for flights</label>
+    </div>
+</div>
+
+  <!-- Offers and Deals -->
+
+
+<!-- Sign in Banner -->
+<div class="banner">
+    <div>Sign in to access One Key Member Prices</div>
+    <button>Sign in</button>
+  </div>
+
+   <!-- Main Card Promo -->
+   <div class="main-card">
+    <div class="content-main">
+      <div class="badge">NEW</div>
+      <div class="title">Earn up to $400 in OneKeyCash™</div>
+      <div class="desc">after qualifying purchases. Terms apply.<br>OneKeyCash is not redeemable for cash.</div>
+      <button>Learn more</button>
+    </div>
+    <img src="https://via.placeholder.com/300x200?text=Card+Image" alt="Card Promo">
+  </div>
+ 
+
+  <!-- Places to visit -->
+
+  <h1 style="margin-left: 10%; margin-top: 30px;">Trending destinations</h1>
+  <p style="margin-left: 10%;">Most popular choices for travelers from India</p>
+  <section class="custom-hero-section">
+
+    <div class="custom-card-grid">
+      <a class="custom-card" href="#">
+        <div class="custom-card__background" style="background-image: url(https://i.im.ge/2022/12/09/dMKIrP.breathtaking-desert-blue-sky-morocco.jpg)"></div>
+        <div class="custom-card__content">
+          <p class="custom-card__category">Places</p>
+          <h3 class="custom-card__heading">Desert</h3>
+        </div>
+      </a>
+      <a class="custom-card" href="#">
+        <div class="custom-card__background" style="background-image: url(https://i.im.ge/2022/12/09/dMZqZx.vertical-shot-lake-marian-mountains-new-zealand.jpg)"></div>
+        <div class="custom-card__content">
+          <p class="custom-card__category">Places</p>
+          <h3 class="custom-card__heading">Mountains</h3>
+        </div>
+      </a>
+      <a class="custom-card" href="#">
+        <div class="custom-card__background" style="background-image: url(https://i.im.ge/2022/12/09/dMKfLM.vertical-shot-beautiful-green-valley-cloudy-sky.jpg)"></div>
+        <div class="custom-card__content">
+          <p class="custom-card__category">Places</p>
+          <h3 class="custom-card__heading">Countryside</h3>
+        </div>
+      </a>
+      <a class="custom-card" href="#">
+        <div class="custom-card__background" style="background-image: url(https://i.im.ge/2022/12/09/dMVfWG.beautiful-views-azure-coast-rocks-pine-trees-white-sand-aegean-sea-turkey-kusadasi.jpg)"></div>
+        <div class="custom-card__content">
+          <p class="custom-card__category">Places</p>
+          <h3 class="custom-card__heading">Beach</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+  
+
+  <!-- places to visit (card style 2)-->
+  <h1 style="margin-left: 10%; margin-top: 35px;">Explore destinations</h1>
+  <p class="subheading" style="margin-left: 10%;">These popular destinations have a lot to offer</p>
+  <div id="card-container">
+		<div class="card-wrapper">
+			<div class="card-box-area">
+				<div class="card-box">
+					<img src="https://images.unsplash.com/photo-1561517714-df8e30f0b0ba?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400" alt="Mountaineering">
+					<div class="card-overlay">
+						<h3>Mountaineering</h3>
+						<p>Explore the heights and breathe the thrill of adventure.</p>
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+				<div class="card-box">
+					<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=600&h=400" alt="Scuba Diving">
+					<div class="card-overlay">
+						<h3>Scuba Diving</h3>
+						<p>Dive into the deep blue and discover underwater life.</p>
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+				<div class="card-box">
+					<img src="https://images.unsplash.com/photo-1528612093608-b74e8fae9c0c?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400" alt="Travel World">
+					<div class="card-overlay">
+						<h3>Travel World</h3>
+						<p>Pack your bags and explore breathtaking destinations.</p>
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <!--cards style 3-->
+  <h1 style="margin-left: 10%; margin-top: 35px;">Quick and easy trip planner</h1>
+  <p class="subheading" style="margin-left: 10%;">Pick a vibe and explore the top destinations</p>
+  <div class="container-3">
+    <div class="box-3" data-title="Adventure" style="background-image: url('https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg');"></div>
+    <div class="box-3" data-title="Explore" style="background-image: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg');"></div>
+    <div class="box-3" data-title="Vacation" style="background-image: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg');"></div>
+    <div class="box-3" data-title="Nature Trip" style="background-image: url('https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg');"></div>
+    <div class="box-3" data-title="Adventure" style="background-image: url('https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg');"></div>
+    <div class="box-3" data-title="Explore" style="background-image: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg');"></div>
+  </div>
+
+  <!--detailed card style 4-->
+  <h1 style="margin-left: 10%; margin-top: 35px;">Deals for the weekend</h1>
+  <p class="subheading" style="margin-left: 10%;">Save on stays for April 25 - April 27</p>
+  <div class="wrapper">
+
+    <div class="single-card">
+      <div class="img-area">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
+        <div class="overlay">
+          <button class="add-to-cart">Book Now</button>
+          <button class="view-details">View Details</button>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Maldives</h3>
+        <p class="price">₹89,999</p>
+        <p>Experience turquoise waters and luxury at its best.</p>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="img-area">
+        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" alt="Paris">
+        <div class="overlay">
+          <button class="add-to-cart">Book Now</button>
+          <button class="view-details">View Details</button>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Paris</h3>
+        <p class="price">₹1,24,999</p>
+        <p>Fall in love with the city of lights and romance.</p>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="img-area">
+        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba" alt="Swiss Alps">
+        <div class="overlay">
+          <button class="add-to-cart">Book Now</button>
+          <button class="view-details">View Details</button>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Swiss Alps</h3>
+        <p class="price">₹1,39,999</p>
+        <p>Chill in the snow with breathtaking mountain views.</p>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="img-area">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
+        <div class="overlay">
+          <button class="add-to-cart">Book Now</button>
+          <button class="view-details">View Details</button>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Maldives</h3>
+        <p class="price">₹89,999</p>
+        <p>Experience turquoise waters and luxury at its best.</p>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="img-area">
+        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" alt="Paris">
+        <div class="overlay">
+          <button class="add-to-cart">Book Now</button>
+          <button class="view-details">View Details</button>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Paris</h3>
+        <p class="price">₹1,24,999</p>
+        <p>Fall in love with the city of lights and romance.</p>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="img-area">
+        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba" alt="Swiss Alps">
+        <div class="overlay">
+          <button class="add-to-cart">Book Now</button>
+          <button class="view-details">View Details</button>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Swiss Alps</h3>
+        <p class="price">₹1,39,999</p>
+        <p>Chill in the snow with breathtaking mountain views.</p>
+      </div>
+</div>
+
+<div class="single-card">
+  <div class="img-area">
+    <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba" alt="Swiss Alps">
+    <div class="overlay">
+      <button class="add-to-cart">Book Now</button>
+      <button class="view-details">View Details</button>
+    </div>
+  </div>
+  <div class="info">
+    <h3>Swiss Alps</h3>
+    <p class="price">₹1,39,999</p>
+    <p>Chill in the snow with breathtaking mountain views.</p>
+  </div>
+</div>
+
+<div class="single-card">
+  <div class="img-area">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
+    <div class="overlay">
+      <button class="add-to-cart">Book Now</button>
+      <button class="view-details">View Details</button>
+    </div>
+  </div>
+  <div class="info">
+    <h3>Maldives</h3>
+    <p class="price">₹89,999</p>
+    <p>Experience turquoise waters and luxury at its best.</p>
+  </div>
+</div>
+</div>
+
+
+  <!--footer-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">COVID-19 FAQs</a></li>
+            <li><a href="#">Manage your trips</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Safety Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Discover</h4>
+          <ul>
+            <li><a href="#">Genius loyalty program</a></li>
+            <li><a href="#">Holiday deals</a></li>
+            <li><a href="#">Travel articles</a></li>
+            <li><a href="#">Business Travel</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Car rental</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Terms & Settings</h4>
+          <ul>
+            <li><a href="#">Privacy & cookies</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Grievance officer</a></li>
+            <li><a href="#">Human Rights</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Partners</h4>
+          <ul>
+            <li><a href="#">Extranet login</a></li>
+            <li><a href="#">List your property</a></li>
+            <li><a href="#">Become an affiliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="footer-country">
+          <span class="flag">🇮🇳</span> INR
+        </div>
+        <p>© 1996–2025 TravelHub™. All rights reserved.</p>
+        <div class="footer-brands">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Booking.com_logo.svg" alt="Booking.com" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Priceline_logo.svg" alt="Priceline" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/KAYAK_Logo.svg" alt="Kayak" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Agoda_logo.svg" alt="Agoda" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/OpenTable_logo.svg" alt="OpenTable" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
